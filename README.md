@@ -11,11 +11,11 @@ require_once 'npage_pagination/npage_pagination.php';
 ```
 ## Using Example
 ```php
-require_once "npage_pagination.php"; // including npage file
+require_once "npage_pagination/npage_pagination.php"; // including npage pagination file
 $npage = new npage_pagination(
 	array(
 		'hostname' => "localhost", // host name
-		'username' => "root", // username
+		'username' => "root", // user name
 		'password' => "", // password
 		'database' => "demo_proj" //database name
 	),
@@ -60,3 +60,50 @@ $data = $npage->get_records(); //get record from database in array format
   <?php echo $npage->get_navigation(); // print navigation button ?>
 </div>
 ```
+## Syntax (arguments)
+
+```
+new npage_pagination($database, $query, $numofrows);
+$database = array(
+    'hostname' => "host_name", 
+    'username' => "user_name", 
+    'password' => "password", 
+    'database' => "database_name",
+    'port' => 3306
+);
+$query = "SELECT * FROM TABLENAME";
+$numofrows = 10;
+```
+### database
+Give the database access details in an array format.
+<ol type="1">
+<li><b>hostname</b><li>
+<li><b>username</b><li>
+<li><b>password</b><li>
+<li><b>database</b><li>
+<li><b>port</b><li>
+</ol>
+
+### query
+Give the select query, it also supports join query and union query.
+
+### numofrows
+Give the how many numbers record needs of a page.
+
+<h5>npage_pagination methods</h5><dl>
+  <dt><code>npage_pagination:get_query()</code></dt>
+<dd>This method helps to get the query of the current page.<ul>
+<li><b>code</b> : <code>$npage->get_query();</code></li></ul></dd>
+<dt><code>npage_pagination:get_records($datatype)</code></dt>
+  <dd>This method is used to get the data of the current page. datatype argument helps to control get the return data type of records (array or object)<ul>
+<li><b>code</b> : <code>$npage->get_records('array');</code></li></ul></dd>
+<dt><code>npage_pagination:get_pageno()</code></dt>
+  <dd>This method helps to get the page number of the current page.<ul>
+<li><b>code</b> : <code>$npage->get_pageno();</code></li></ul></dd>
+  <dt><code>npage_pagination:get_navigation()</code></dt>
+  <dd>This method use to get HTML navigation buttons<ul>
+<li><b>code</b> : <code>$npage->get_navigation();</code></li>
+</ul></dd>
+</dl>
+
+Learn more about in [minisuperfiles.blogspot.com](https://minisuperfiles.blogspot.com)
