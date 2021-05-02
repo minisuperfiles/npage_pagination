@@ -77,11 +77,11 @@ $numofrows = 10;
 ### database
 Give the database access details in an array format.
 <ol type="1">
-<li><b>hostname</b><li>
-<li><b>username</b><li>
-<li><b>password</b><li>
-<li><b>database</b><li>
-<li><b>port</b><li>
+<li><b>hostname</b></li>
+<li><b>username</b></li>
+<li><b>password</b></li>
+<li><b>database</b></li>
+<li><b>port</b></li>
 </ol>
 
 ### query
