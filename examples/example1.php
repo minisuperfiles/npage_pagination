@@ -7,7 +7,7 @@ $t = new npage_pagination(
 		'password' => "",
 		'database' => "demo_proj"
 	),
-	"SELECT * FROM `st_receipt`",
+	"SELECT * FROM `st_order`",
 	2
 );
 $data = $t->get_records();
