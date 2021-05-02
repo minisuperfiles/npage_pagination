@@ -1,7 +1,7 @@
 # npage_pagination
 It is pagination library for php with mysql. It's create automatically generating navigation links.
 
-<img src="https://raw.githubusercontent.com/minisuperfiles/npage_pagination/main/examples/preview.png" alt="Pagination preview" width="805"/>
+![Pagination preview](https://github.com/minisuperfiles/npage_pagination/blob/main/examples/preview.png?raw=true)
 
 ### [Documentation](https://minisuperfiles.blogspot.com/p/documentation.html?project=npage_pagination) | [Download](https://github.com/minisuperfiles/MSFmultiSelect/archive/1.0.zip)
 
