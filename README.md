@@ -3,7 +3,7 @@ It is pagination library for php with mysql. It's create automatically generatin
 
 ![Pagination preview](https://github.com/minisuperfiles/npage_pagination/blob/main/examples/preview.png?raw=true)
 
-### [Documentation](https://minisuperfiles.blogspot.com/p/documentation.html?project=npage_pagination) | [Download](https://github.com/minisuperfiles/MSFmultiSelect/archive/1.0.zip)
+### [Documentation](https://minisuperfiles.blogspot.com/p/documentation.html?project=npage_pagination) | [Download](https://github.com//minisuperfiles/npage_pagination/archive/refs/tags/v1.0.zip)
 
 ## Including library file
 ```php
